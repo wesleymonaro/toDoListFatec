@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ToDoList Fatec</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p text-center>Registrar usuário</p>
+  <form>
+    <ion-item>
+      <ion-icon name="mail" item-left color="primary"></ion-icon>
+      <ion-input type="email" [(ngModel)]="email_r" name="email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="lock" item-left color="primary"></ion-icon>
+      <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password_r"></ion-input>
+    </ion-item>
+
+    <br>
+
+    <button ion-button full (click)="register()">Registrar</button>
+  </form>
+
+  <br><br>
+
+  <p text-center>Login</p>
+  <form>
+    <ion-item>
+      <ion-icon name="mail" item-left color="primary"></ion-icon>
+      <ion-input type="email" placeholder="Email" [(ngModel)]="email_l" name="email" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="lock" item-left color="primary"></ion-icon>
+      <ion-input type="password" placeholder="Password" [(ngModel)]="password_l" name="password" ></ion-input>
+    </ion-item>
+
+    <br>
+
+    <button ion-button full (click)="login()">Login</button>
+  </form>
+</ion-content>
