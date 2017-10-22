@@ -1,6 +1,6 @@
 # toDoListFatec
 
-## App desenvolvido para demonstração no Mini curso de Introdução ao Desenvolvimento de Apps com Ionic e Firebase ministrado na Fatec de Mogi das Cruzes
+### App desenvolvido para demonstração no Mini curso de Introdução ao Desenvolvimento de Apps com Ionic e Firebase ministrado na Fatec de Mogi das Cruzes
 
 [Live Demo](https://todolistfatec.firebaseapp.com) 
 
