@@ -11,7 +11,7 @@
 
   <ion-segment [(ngModel)]="action" margin-bottom>
     <ion-segment-button value="login">
-      Login
+      Entrar
     </ion-segment-button>
     <ion-segment-button value="registrar">
       Registrar
@@ -19,15 +19,13 @@
   </ion-segment>
 
   <div style="margin-top: 20%;" *ngIf="action == 'registrar'">
-    <p text-center>REGISTRAR USUÁRIO</p>
+    <p text-center>Insira seu melhor e-mail e senha para se cadastrar</p>
     <form>
       <ion-item>
-        <!-- <ion-icon name="mail" item-left color="primary"></ion-icon> -->
         <ion-input type="email" [(ngModel)]="email_r" name="email" placeholder="Email"></ion-input>
       </ion-item>
 
       <ion-item>
-        <!-- <ion-icon name="lock" item-left color="primary"></ion-icon> -->
         <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password_r"></ion-input>
       </ion-item>
 
@@ -39,21 +37,19 @@
 
 
   <div style="margin-top: 20%;" margin-top *ngIf="action == 'login'">
-    <p text-center>LOGIN</p>
+    <p text-center>Entre com seu e-mail e senha.</p>
     <form>
       <ion-item>
-        <!-- <ion-icon name="mail" item-left color="primary"></ion-icon> -->
         <ion-input type="email" placeholder="Email" [(ngModel)]="email_l" name="email"></ion-input>
       </ion-item>
 
       <ion-item>
-        <!-- <ion-icon name="lock" item-left color="primary"></ion-icon> -->
         <ion-input type="password" placeholder="Password" [(ngModel)]="password_l" name="password"></ion-input>
       </ion-item>
 
       <br>
 
-      <button ion-button full (click)="login()">Login</button>
+      <button ion-button full (click)="login()">Entrar</button>
     </form>
   </div>
 </ion-content>

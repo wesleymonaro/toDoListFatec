@@ -40,7 +40,7 @@ webpackEmptyAsyncContext.id = 158;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(216);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -99,7 +99,7 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Projetos\toDoListFatec\src\pages\login\login.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>ToDoList Fatec</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-segment [(ngModel)]="action" margin-bottom>\n    <ion-segment-button value="login">\n      Login\n    </ion-segment-button>\n    <ion-segment-button value="registrar">\n      Registrar\n    </ion-segment-button>\n  </ion-segment>\n\n  <div style="margin-top: 20%;" *ngIf="action == \'registrar\'">\n    <p text-center>REGISTRAR USUÁRIO</p>\n    <form>\n      <ion-item>\n        <!-- <ion-icon name="mail" item-left color="primary"></ion-icon> -->\n        <ion-input type="email" [(ngModel)]="email_r" name="email" placeholder="Email"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <!-- <ion-icon name="lock" item-left color="primary"></ion-icon> -->\n        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password_r"></ion-input>\n      </ion-item>\n\n      <br>\n\n      <button ion-button full (click)="register()">Registrar</button>\n    </form>\n  </div>\n\n\n  <div style="margin-top: 20%;" margin-top *ngIf="action == \'login\'">\n    <p text-center>LOGIN</p>\n    <form>\n      <ion-item>\n        <!-- <ion-icon name="mail" item-left color="primary"></ion-icon> -->\n        <ion-input type="email" placeholder="Email" [(ngModel)]="email_l" name="email"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <!-- <ion-icon name="lock" item-left color="primary"></ion-icon> -->\n        <ion-input type="password" placeholder="Password" [(ngModel)]="password_l" name="password"></ion-input>\n      </ion-item>\n\n      <br>\n\n      <button ion-button full (click)="login()">Login</button>\n    </form>\n  </div>\n</ion-content>'/*ion-inline-end:"C:\Projetos\toDoListFatec\src\pages\login\login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"/Users/roosevelt/Projetos/toDoListFatecDone/src/pages/login/login.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>ToDoList Fatec</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n  <ion-segment [(ngModel)]="action" margin-bottom>\n    <ion-segment-button value="login">\n      Entrar\n    </ion-segment-button>\n    <ion-segment-button value="registrar">\n      Registrar\n    </ion-segment-button>\n  </ion-segment>\n\n  <div style="margin-top: 20%;" *ngIf="action == \'registrar\'">\n    <p text-center>Insira seu melhor e-mail e senha para se cadastrar</p>\n    <form>\n      <ion-item>\n        <ion-input type="email" [(ngModel)]="email_r" name="email" placeholder="Email"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password_r"></ion-input>\n      </ion-item>\n\n      <br>\n\n      <button ion-button full (click)="register()">Registrar</button>\n    </form>\n  </div>\n\n\n  <div style="margin-top: 20%;" margin-top *ngIf="action == \'login\'">\n    <p text-center>Entre com seu e-mail e senha.</p>\n    <form>\n      <ion-item>\n        <ion-input type="email" placeholder="Email" [(ngModel)]="email_l" name="email"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-input type="password" placeholder="Password" [(ngModel)]="password_l" name="password"></ion-input>\n      </ion-item>\n\n      <br>\n\n      <button ion-button full (click)="login()">Entrar</button>\n    </form>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/roosevelt/Projetos/toDoListFatecDone/src/pages/login/login.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
         __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */],
@@ -117,7 +117,7 @@ LoginPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_task__ = __webpack_require__(307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_task_service__ = __webpack_require__(217);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -168,7 +168,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\Projetos\toDoListFatec\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      To Do List\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form>\n    <ion-input [(ngModel)]="task.name" name="name" placeholder="Nova Tarefa"></ion-input>\n    <button ion-button block (click)="saveTask()">Adicionar</button>\n  </form>\n\n  <div style="margin-top: 15%;">\n\n    <p text-center>\n      <strong>Tarefas abertas</strong>\n    </p>\n    <ion-list>\n      <ion-item *ngFor="let t of allTasks | filter:\'open\'">\n        <ion-label>{{t.name}}</ion-label>\n        <ion-checkbox [(ngModel)]="t.status" (ionChange)="updateTask()"></ion-checkbox>\n      </ion-item>\n    </ion-list>\n    \n    <p text-center>\n      <strong>Tarefas concluídas</strong>\n    </p>\n    <ion-list>\n      <ion-item *ngFor="let t of allTasks | filter:\'done\'">\n        <ion-label>{{t.name}}</ion-label>\n        <ion-checkbox [(ngModel)]="t.status" (ionChange)="updateTask()"></ion-checkbox>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>'/*ion-inline-end:"C:\Projetos\toDoListFatec\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"/Users/roosevelt/Projetos/toDoListFatecDone/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      To Do List\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <form>\n\n    <p text-left>\n      <strong>NOVA TAREFA</strong>\n    </p>\n    <ion-item>\n      <ion-input [(ngModel)]="task.name" name="name" placeholder="Ex: Estudar"></ion-input>\n    </ion-item>\n    <button ion-button block (click)="saveTask()">Adicionar</button>\n\n  </form>\n\n  <div style="margin-top: 15%;">\n\n    <p text-left>\n      <strong>TAREFAS ABERTAS</strong>\n    </p>\n    <ion-list>\n      <ion-item *ngFor="let t of allTasks | filter:\'open\'">\n        <ion-label>{{t.name}}</ion-label>\n        <ion-checkbox [(ngModel)]="t.status" (ionChange)="updateTask()"></ion-checkbox>\n      </ion-item>\n    </ion-list>\n\n    <p text-left>\n      <strong>TAREFAS CONCLUÍDAS</strong>\n    </p>\n    <ion-list>\n      <ion-item *ngFor="let t of allTasks | filter:\'done\'">\n        <ion-label>{{t.name}}</ion-label>\n        <ion-checkbox [(ngModel)]="t.status" (ionChange)="updateTask()"></ion-checkbox>\n      </ion-item>\n    </ion-list>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/roosevelt/Projetos/toDoListFatecDone/src/pages/home/home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */],
         __WEBPACK_IMPORTED_MODULE_3__providers_task_service__["a" /* TaskService */]])
@@ -256,7 +256,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(202);
@@ -344,7 +344,7 @@ AppModule = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(201);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(215);
@@ -375,7 +375,7 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\Projetos\toDoListFatec\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Projetos\toDoListFatec\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/roosevelt/Projetos/toDoListFatecDone/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/roosevelt/Projetos/toDoListFatecDone/src/app/app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);

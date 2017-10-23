@@ -8,14 +8,21 @@
 
 <ion-content padding>
   <form>
-    <ion-input [(ngModel)]="task.name" name="name" placeholder="Nova Tarefa"></ion-input>
+
+    <p text-left>
+      <strong>NOVA TAREFA</strong>
+    </p>
+    <ion-item>
+      <ion-input [(ngModel)]="task.name" name="name" placeholder="Ex: Estudar"></ion-input>
+    </ion-item>
     <button ion-button block (click)="saveTask()">Adicionar</button>
+
   </form>
 
   <div style="margin-top: 15%;">
 
-    <p text-center>
-      <strong>Tarefas abertas</strong>
+    <p text-left>
+      <strong>TAREFAS ABERTAS</strong>
     </p>
     <ion-list>
       <ion-item *ngFor="let t of allTasks | filter:'open'">
@@ -23,9 +30,9 @@
         <ion-checkbox [(ngModel)]="t.status" (ionChange)="updateTask()"></ion-checkbox>
       </ion-item>
     </ion-list>
-    
-    <p text-center>
-      <strong>Tarefas concluídas</strong>
+
+    <p text-left>
+      <strong>TAREFAS CONCLUÍDAS</strong>
     </p>
     <ion-list>
       <ion-item *ngFor="let t of allTasks | filter:'done'">
