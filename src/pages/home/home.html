@@ -7,23 +7,31 @@
 </ion-header>
 
 <ion-content padding>
- <form>
-   <ion-input [(ngModel)]="task.name" name="name" placeholder="Tarefa"></ion-input>
-   <button ion-button block (click)="saveTask()">Adicionar</button>
- </form>
+  <form>
+    <ion-input [(ngModel)]="task.name" name="name" placeholder="Nova Tarefa"></ion-input>
+    <button ion-button block (click)="saveTask()">Adicionar</button>
+  </form>
 
- <p text-center><strong>Tarefas abertas</strong></p>
- <ion-list>
-  <ion-item *ngFor="let t of allTasks | filter:'opens'">
-    {{t.name}}
-    <button ion-button (click)="taskDone(t)">OK</button>
-  </ion-item>
- </ion-list>
+  <div style="margin-top: 15%;">
 
- <p text-center><strong>Tarefas concluídas</strong></p>
- <ion-list>
-  <ion-item *ngFor="let t of allTasks | filter:'done'">
-    {{t.name}}
-  </ion-item>
- </ion-list>
+    <p text-center>
+      <strong>Tarefas abertas</strong>
+    </p>
+    <ion-list>
+      <ion-item *ngFor="let t of allTasks | filter:'open'">
+        <ion-label>{{t.name}}</ion-label>
+        <ion-checkbox [(ngModel)]="t.status" (ionChange)="updateTask()"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+    
+    <p text-center>
+      <strong>Tarefas concluídas</strong>
+    </p>
+    <ion-list>
+      <ion-item *ngFor="let t of allTasks | filter:'done'">
+        <ion-label>{{t.name}}</ion-label>
+        <ion-checkbox [(ngModel)]="t.status" (ionChange)="updateTask()"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

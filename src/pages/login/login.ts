@@ -16,6 +16,8 @@ export class LoginPage {
   email_l: string;
   password_l: string;
 
+  action: string = "login";
+
   constructor(
     public alertCtrl: AlertController,
     public angfire: AngularFireAuth,

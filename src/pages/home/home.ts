@@ -28,6 +28,8 @@ export class HomePage {
   }
 
   saveTask(): void{
+    if(this.task.name.length < 3) return;
+
     this.allTasks.push(this.task);
     this.task = new Task();
     this.taskService.save(this.allTasks);
@@ -35,11 +37,15 @@ export class HomePage {
     
   }
 
-  taskDone(task: Task){
+  // taskDone(task: Task){
 
-    let index = this.allTasks.indexOf(task);
-    if(index != -1) this.allTasks[index].status = 1;
-    this.taskService.save(this.allTasks);
+  //   let index = this.allTasks.indexOf(task);
+  //   if(index != -1) this.allTasks[index].status = 1;
+  //   this.taskService.save(this.allTasks);
     
+  // }
+
+  updateTask(){
+    this.taskService.save(this.allTasks);
   }
 }

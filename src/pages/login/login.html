@@ -8,39 +8,52 @@
 
 
 <ion-content padding>
-  <p text-center>Registrar usuário</p>
-  <form>
-    <ion-item>
-      <ion-icon name="mail" item-left color="primary"></ion-icon>
-      <ion-input type="email" [(ngModel)]="email_r" name="email" placeholder="Email"></ion-input>
-    </ion-item>
 
-    <ion-item>
-      <ion-icon name="lock" item-left color="primary"></ion-icon>
-      <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password_r"></ion-input>
-    </ion-item>
+  <ion-segment [(ngModel)]="action" margin-bottom>
+    <ion-segment-button value="login">
+      Login
+    </ion-segment-button>
+    <ion-segment-button value="registrar">
+      Registrar
+    </ion-segment-button>
+  </ion-segment>
 
-    <br>
+  <div style="margin-top: 20%;" *ngIf="action == 'registrar'">
+    <p text-center>REGISTRAR USUÁRIO</p>
+    <form>
+      <ion-item>
+        <!-- <ion-icon name="mail" item-left color="primary"></ion-icon> -->
+        <ion-input type="email" [(ngModel)]="email_r" name="email" placeholder="Email"></ion-input>
+      </ion-item>
 
-    <button ion-button full (click)="register()">Registrar</button>
-  </form>
+      <ion-item>
+        <!-- <ion-icon name="lock" item-left color="primary"></ion-icon> -->
+        <ion-input type="password" placeholder="Password" name="password" [(ngModel)]="password_r"></ion-input>
+      </ion-item>
 
-  <br><br>
+      <br>
 
-  <p text-center>Login</p>
-  <form>
-    <ion-item>
-      <ion-icon name="mail" item-left color="primary"></ion-icon>
-      <ion-input type="email" placeholder="Email" [(ngModel)]="email_l" name="email" ></ion-input>
-    </ion-item>
+      <button ion-button full (click)="register()">Registrar</button>
+    </form>
+  </div>
 
-    <ion-item>
-      <ion-icon name="lock" item-left color="primary"></ion-icon>
-      <ion-input type="password" placeholder="Password" [(ngModel)]="password_l" name="password" ></ion-input>
-    </ion-item>
 
-    <br>
+  <div style="margin-top: 20%;" margin-top *ngIf="action == 'login'">
+    <p text-center>LOGIN</p>
+    <form>
+      <ion-item>
+        <!-- <ion-icon name="mail" item-left color="primary"></ion-icon> -->
+        <ion-input type="email" placeholder="Email" [(ngModel)]="email_l" name="email"></ion-input>
+      </ion-item>
 
-    <button ion-button full (click)="login()">Login</button>
-  </form>
+      <ion-item>
+        <!-- <ion-icon name="lock" item-left color="primary"></ion-icon> -->
+        <ion-input type="password" placeholder="Password" [(ngModel)]="password_l" name="password"></ion-input>
+      </ion-item>
+
+      <br>
+
+      <button ion-button full (click)="login()">Login</button>
+    </form>
+  </div>
 </ion-content>

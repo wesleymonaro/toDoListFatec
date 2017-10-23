@@ -15,12 +15,12 @@ import { LoginPage } from '../pages/login/login';
 import { FilterPipe } from '../pipes/filter.pipe';
 
 var config = {
-  apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  authDomain: "xxxxxxxxxxx.firebaseapp.com",
-  databaseURL: "https://xxxxxxxxxxxx.firebaseio.com",
+  apiKey: "AIzaSyACpb167bzmxJC9aXrf9Dd0l1QFyl5YOS8",
+  authDomain: "todolistfatec.firebaseapp.com",
+  databaseURL: "https://todolistfatec.firebaseio.com",
   projectId: "todolistfatec",
   storageBucket: "",
-  messagingSenderId: "xxxxxxxxxxxxxx"
+  messagingSenderId: "800418006444"
 };
 
 @NgModule({
@@ -33,7 +33,7 @@ var config = {
   imports: [
     BrowserModule,
     IonicStorageModule.forRoot(),
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp, {mode: 'ios'}),
     AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule,
     AngularFireAuthModule
