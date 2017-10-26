@@ -17,3 +17,30 @@ Depois de finalizar, execute:
 ```bash
 ionic lab
 ```
+
+Para criar a plataforma Android no projeto, execute no terminal:
+
+```bash
+cordova platform add android
+```
+
+*Para rodar esse comando, o SDK do android precisa estar instalado na máquina.*
+
+
+Para debugar a aplicação no Chrome, conecte o device via USB, com modo de desenvolvedor ativo, e abra no chrome: [chrome://inspect](chrome://inspect) 
+
+Para usar um emulador, vimos durante a aula o Genymotion - [Genymotion personal use](https://www.genymotion.com/fun-zone/)
+
+Para espelhar a tela do celular no PC, usamos o [Vysor](https://www.vysor.io)
+
+E por fim, adicionamos o nosso projeto no Firebase Hosting, executando os comandos:
+
+```bash
+firebase init
+```
+
+E depois de configurar:
+
+```bash
+firebase deploy
+```

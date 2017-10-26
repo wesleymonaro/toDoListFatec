@@ -15,12 +15,12 @@ import { LoginPage } from '../pages/login/login';
 import { FilterPipe } from '../pipes/filter.pipe';
 
 var config = {
-  apiKey: "AIzaSyACpb167bzmxJC9aXrf9Dd0l1QFyl5YOS8",
-  authDomain: "todolistfatec.firebaseapp.com",
-  databaseURL: "https://todolistfatec.firebaseio.com",
-  projectId: "todolistfatec",
+  apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  authDomain: "xxxxxxxxxxxx.firebaseapp.com",
+  databaseURL: "https://xxxxxxxxxxxx.firebaseio.com",
+  projectId: "xxxxxxxxxxxx",
   storageBucket: "",
-  messagingSenderId: "800418006444"
+  messagingSenderId: "xxxxxxxxxxxx"
 };
 
 @NgModule({
